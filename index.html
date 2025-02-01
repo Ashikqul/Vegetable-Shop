@@ -12,6 +12,8 @@
     <!-- d\t -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 <style>
     .font-sora{
         font-family: "Sora", serif;
@@ -35,7 +37,8 @@
 <body class="font-sora">
     <header class="md:container mx-auto bg-[#EFEBE3]">
 <nav>
-    <div class="navbar bg-base-100 justify-between items-center py-3">
+  <marquee class="shop-primary" behavior="5" direction="">Eating vegetables keeps the body nourished and healthy.</marquee>
+  <div class="navbar bg-base-100 justify-between items-center py-3">
         <div class="flex items-center">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
@@ -59,7 +62,10 @@
                 <li><a>Contact us</a></li>
             </ul>
         </div>
-        
+        <div class="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-light fa-cart-shopping"></i>
+        </div>
         <div class=" hidden lg:flex gap-3">
             <a class="btn w-28 h-11 text-black border-green-500">Login</a>
             <a class="btn bg-shop-primary w-36 h-11 text-white">Register</a>
@@ -125,12 +131,98 @@
 </div>
 </section> 
 
+<section class="bg-[#EFEBE3] py-10">
+  <div class="bg-[#EFEBE3] p-10">
+    <h2 class="font-semibold text-3xl text-shop-primary mb-6">Popular Products</h2>
+
     
-    
+      <div class="flex gap-6 items-start">
+          
+          <div class="card bg-gradient-to-r from-green-500 to-green-600 w-[425px] h-[403px] shadow-xl p-6 flex flex-col justify-between rounded-xl">
+              <div>
+                  <h2 class="text-white text-xl font-bold">30% Off</h2>
+                  <p class="text-white">Get the best vegetables at the best price!</p>
+                  <button class="bg-white text-black font-semibold py-2 px-4 rounded-lg shadow-md flex items-center justify-center gap-2">
+                    Buy Now</button> 
+                  
+              </div>
+              <img class="w-96 h-96 mx-auto" src="c2-assets/vegetable-offer.png" />
+              
+          </div>
+  
+          
+          <div class="grid grid-cols-2 gap-4">
+              <div class="card w-40 h-40 bg-white shadow-md flex flex-col items-center justify-center p-4 rounded-lg">
+                  <img src="c2-assets/apple.png" class="w-12 h-12" />
+                  <p></p>
+              </div>
+              <div class="card w-40 h-40 bg-white  flex flex-col items-center justify-center p-4 rounded-lg">
+                  <img src="c2-assets/banana.png" class="w-12 h-12" />
+                  <p>Banana</p>
+              </div>
+              <div class="card w-40 h-40 bg-white shadow-md flex flex-col items-center justify-center p-4 rounded-lg">
+                  <img src="c2-assets/carrot.png" class="w-12 h-12" />
+                  <p>Carrot</p>
+              </div>
+              <div class="card w-40 h-40 bg-white shadow-md flex flex-col items-center justify-center p-4 rounded-lg">
+                  <img src="c2-assets/grapes.png" class="w-12 h-12" />
+                  <p>Grapes</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+</section>
+<section class="md:container mx-auto">
+
+  <!--  Arrival & Offers Section -->
+  <h2 class="font-semibold text-3xl text-shop-primary mb-6">Arrival & Offers</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-6">
+      <div class="bg-[#115414] text-white p-6 rounded-xl flex flex-col items-center justify-between shadow-lg">
+          <img src="c2-assets/dawat-mock-up.png" class="w-32 h-32" />
+          <p class="text-lg font-semibold">Cook Exotic Dishes</p>
+          <p class="text-sm">Up to <span class="font-bold">20% OFF</span></p>
+      </div>
+
+      <div class="bg-[#102861] text-white p-6 rounded-xl flex flex-col items-center justify-between shadow-lg">
+          <img src="c2-assets/india-gate-mock-up.png" class="w-32 h-32" />
+          <p class="text-lg font-semibold">World's No.1 Rice</p>
+          <p class="text-sm">Up to <span class="font-bold">40% OFF</span></p>
+      </div>
+
+      
+  </div>
+
+  
+</div>
+</section>
    
     </main>
-    <footer>
-
-    </footer>
+    <footer class="bg-[#179800] text-white p-10 mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-3">
+          <div>
+              <img src="c2-assets/logo-footer.png" alt="">
+              
+          </div>
+          <div>
+             
+              <ul class="text-sm">
+                  <li><a href="#" class="hover:underline">Product</a></li>
+                  <li><a href="#" class="hover:underline">Services</a></li>
+                  <li><a href="#" class="hover:underline">Contact Us</a></li>
+              </ul>
+          </div>
+          <div>
+              <h3 class="font-semibold">Follow Us</h3>
+              <div class="flex gap-4">
+                  <i class="fa-brands fa-facebook text-xl"></i>
+                  <i class="fa-brands fa-twitter text-xl"></i>
+                  <i class="fa-brands fa-instagram text-xl"></i>
+              </div>
+          </div>
+      </div>
+      
+  </footer>
 </body>
 </html>
